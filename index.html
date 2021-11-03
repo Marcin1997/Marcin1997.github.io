@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400;600;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="spinner-container">
+        <div class="circles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <div class="container" id="cont">
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+
+
+        </div>
+
+        <section class="sidebar">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link about" data-content="About">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#drawing" class="menu-link" data-content="Projects">Projects</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link contact-mobile-side-link" data-content="Contact">Contact </a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://drive.google.com/file/d/1dWeImRzz56c7U_CQUir7RkRdwe_6VHbH/view?usp=sharing"
+                        class="menu-link" data-content="Resume">Resume</a>
+                </li>
+
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="about-me-container">
+
+        <div class="about-me-div">
+
+            <div class="about-me-contents">
+                <h2 class="about-me-header">Who am I?</h2>
+                <p class="front-end-p">Front-end developer</p>
+                <p class="summary">Hi, I'm Marcin Grzybowski, I'm a 24 year old self-taught aspiring Front-end
+                    developer. I've
+                    started my journey with front-end development in early 2021, I've been on this
+                    wonderful adventure ever since then.
+                    <br>
+                    <br>
+                    When I'm not programming I spend lots of my time making jewellery, cycling and generally being
+                    surrounder by nature and its wonders!
+                    <br>
+                    <br> Ever sine I was little technology has been one of my passions. I love working with CSS and
+                    Javascript to make interactive and interesting
+                    web pages. I greatly enjoy the wonderful feeling of accomplishment when I finally find a solution
+                    for a challenge that I set myself.
+                    I also like to learn new technologies and I'm currently learning <b>React</b> and <b>C#</b>
+
+                    on top of what I already know:
+
+
+                </p>
+                <div class="speciality-list">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <div class="about-me-form">
+                <a href="#" class="close-about-me"><i class="fas fa-times"></i></a>
+                <section class="contact">
+                    <div class="contact-wrapper">
+                        <div class="contact-left"></div>
+                        <div class="contact-right">
+                            <h1 class="contact-heading">Contact</h1>
+                            <form action="https://formsubmit.co/marcin.grz97@gmail.com" method="POST">
+                                <div class="input-group">
+                                    <input type="text" class="field" name="name" required>
+                                    <label class="input-label" for="">
+                                        Name
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" class="field" name="email" required>
+                                    <label class="input-label" for="">
+                                        Email
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <textarea class="field" name="message" required></textarea>
+                                    <label class="message">Message</label>
+                                </div>
+                                <input type="submit" class="submit-btn" value="Submit">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="thankyou.html">
+
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <section class="opening-welcome">
+
+        <nav>
+            <img src="imgs/mainlogowhite.png" alt="">
+            <ul id="example-one">
+                <li><a href="#" class="nav-list current_page_item about-desktop-nav">About</a></li>
+                <li><a href="#drawing" class="nav-list">Projects</a></li>
+                <li><a href="#" class="nav-list contact-desktop">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1dWeImRzz56c7U_CQUir7RkRdwe_6VHbH/view?usp=sharing"
+                        class="nav-list" target="blank
+                        ">Resume</a></li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="downward-line"></div>
+        <div id="particles-js"></div>
+        <section class="main-page">
+
+
+
+            <div class="social-links">
+                <a href="" class="github"><i class="fab fa-github"></i></a>
+                <a href="" class="linked-in"><i class="fab fa-linkedin"></i></a>
+
+
+            </div>
+            <img src="imgs/logonoshad2 (2).png" alt="">
+            <div class="main-page-content">
+                <h1>Marcin Grzybowski</h1>
+                <p>Front-end Developer</p>
+                <a href="#" class="button-about"> About me</a>
+
+
+            </div>
+
+        </section>
+
+
+        <a href="#" class="scroll-btn">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+
+    <div class="my-work-hyper"> <a href="#drawing" class="my-work-arrow"> Portfolio</a></div>
+    <div class="my-work-div">
+        <div class="downward-line2 downward-line-work"">
+
+
+
+        </div>
+
+        <div class=" downward-line3 downward-line-work"> </div>
+        <div class="downward-line4 downward-line-work""> </div>
+
+    </div>
+
+    <div class=" main-content">
+
+            <section class="projects-container">
+                <div class="header-projects">
+                    <h1>Portfolio</h1>
+                    <p>Below are some of the projects I've been working on, from when I started to where I am now!</p>
+                </div>
+                <div class="project-one sdsd">
+
+                    <div class="project-one-text" id="drawing">
+                        <h2>Blizzard Website Clone</h2>
+
+                        <p class="appear-div-desktop">This is a copy of Blizzard Entertainment's
+                            landing page from July
+                            2021, I used
+                            native JS, CSS and HTML in order to build it, using images mostly taken directly from the
+                            original website. All the code used to make this clone was my own.
+                            <br>
+                            <br>
+                            I've enountered a few interesting challenges while cloning this website. Making the image
+                            carousel was one of them and ensuring the responsiveness of the site on every screen size.
+                            <br>
+
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        <div class="demo-github">
+                            <a href="https://github.com/Marcin1997/Blizzard-Clone" target="blank">Github</a>
+                            <a href="https://marcin1997.github.io/Blizzard-Clone/" target="blank">Demo</a>
+                        </div>
+                        </p>
+                    </div>
+                    <a href=""><img src="imgs/project1bg1.png" alt="" class="image-project-one"></a>
+
+                </div>
+                <p class="appear-div appear-div-mobile">This is a copy of Blizzard Entertainment's
+                    landing page from July
+                    2021, I used
+                    native JS, CSS and HTML in order to build it, using images mostly taken directly from the
+                    original website. All the code used to make this clone was my own.
+                    <br>
+                    <br>
+                    I've enountered a few interesting challenges while cloning this website. Making the image
+                    carousel was one of them and ensuring the responsiveness of the site on every screen size.
+                    <br>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+
+                </p>
+                <div class="project-one project-two">
+
+                    <div class="project-one-text">
+                        <h2>Drawing App</h2>
+                        <p class="appear-div-desktop">This is a fully functional drawing app that I made using HTML,
+                            CSS3 and Javascript and using Canvas API. In this version of this project you can set a
+                            background color, change
+                            the
+                            color and thickness of the brush, select an eraser and change it's thickness. You can
+                            download the
+                            drawing if you'd like and lastly you can clear the whole canvas using the clear button
+                            <br>
+                            <br>
+                            I learned a lot from this project. It helped me work with dimensions a little better while
+                            improving my knowledge of Javascript. Creating the brush and its pathing was the biggest
+                            challenge. While It also took me some time to seperate the brush from the eraser, the
+                            solution was very simple but I think my brain just refused to work in that instance!
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+
+                        </p>
+                        <div class="demo-github">
+                            <a href="https://github.com/Marcin1997/Drawing-Application" target="blank">Github</a>
+                            <a href="https://marcin1997.github.io/Drawing-Application/" target="blank">Demo</a>
+                        </div>
+                    </div>
+                    <a href=""><img src="imgs/project2bg.png" alt=""></a>
+
+                </div>
+                <p class="appear-div appear-div-mobile">This is a fully functional drawing app that I made using HTML,
+                    CSS3 and Javascript and using Canvas API. In this version of this project you can set a
+                    background color, change
+                    the
+                    color and thickness of the brush, select an eraser and change it's thickness. You can
+                    download the
+                    drawing if you'd like and lastly you can clear the whole canvas using the clear button
+                    <br>
+                    <br>
+                    I learned a lot from this project. It helped me work with dimensions a little better while
+                    improving my knowledge of Javascript. Creating the brush and its pathing was the biggest
+                    challenge. While It also took me some time to seperate the brush from the eraser, the
+                    solution was very simple but I think my brain just refused to work in that instance!
+                    <br>
+
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+
+                </p>
+                <div class="project-one project-three">
+
+                    <div class="project-one-text">
+                        <h2>Fancy a Quiz?</h2>
+                        <p class="appear-div-desktop">This is a little quiz I made using HTML5, CSS3 and Javascript.
+                            This quiz asks all kinds of questions about me and my interests. From what my favourite dog
+                            breed is to my favourite TV show!
+                            <br>
+                            <br>
+                            Doing this project I've used objects to create the questions and to assign the correct
+                            answers,
+                            at the end of the quiz you'll have a summary with all the right and wrong questions!
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+
+                        </p>
+                        <div class="demo-github">
+                            <a href="https://github.com/Marcin1997/Quiz-app" target="blank">Github</a>
+                            <a href="https://marcin1997.github.io/Quiz-app/" target="blank">Demo</a>
+                        </div>
+                    </div>
+                    <a href=""><img src="imgs/project3bg.png" alt=""></a>
+
+                </div>
+                <p class="appear-div appear-div-mobile">This is a little quiz I made using HTML5, CSS3 and Javascript.
+                    This quiz asks all kinds of questions about me and my interests. From what my favourite dog
+                    breed is to my favourite TV show!
+                    <br>
+                    <br>
+                    Doing this project I've used objects to create the questions and to assign the correct answers,
+                    at the end of the quiz you'll have a summary with all the right and wrong questions!
+                    <br>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+
+                </p>
+                <div class="project-one project-four">
+
+                    <div class="project-one-text">
+                        <h2>Personal website</h2>
+                        <p class="appear-div-desktop">This is the webpage you're looking at right now! I've really
+                            enjoyed working on this project, trying to make it look nice but not too distracting for the
+                            visitors! I've used plain old HTML, CSS3 and Javascript while making it.
+                            <br>
+                            <br>
+                            This personal website was one of my latest projects and it helped me improve my CSS as well
+                            as introducing me to PHP in order to create a fully functional form that will send emails
+                            directly into my inbox.It also helped me practice a few simple but hopefully effective
+                            animations.
+                            <br>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+
+                        </p>
+                        <div class="demo-github">
+                            <a href="">Github</a>
+
+                        </div>
+                    </div>
+                    <a href=""><img src="imgs/project4bg.png" alt=""></a>
+
+                </div>
+                <p class="appear-div appear-div-mobile">This is the webpage you're looking at right now! I've really
+                    enjoyed working on this project, trying to make it look nice but not too distracting for the
+                    visitors! I've used plain old HTML, CSS3 and Javascript while making it.
+                    <br>
+                    <br>
+                    This personal website was one of my latest projects and it helped me improve my CSS as well
+                    as introducing me to PHP in order to create a fully functional form that will send emails
+                    directly into my inbox. It also helped me practice a few simple but hopefully effective
+                    animations.
+                    <br>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+
+                </p>
+            </section>
+
+
+
+
+
+
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo"> <img src="imgs/mainlogowhite.png" alt=""></div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li class="footer-linkedin"><a href="#"><i class="fab fa-linkedin"></i>Linkdedin</a></li>
+                        <li class="footer-github"><a href="#"><i class="fab fa-github"></i>Github</a></li>
+                    </ul>
+                </div>
+                <div class="footer-extras">
+                    <p> &copy; Marcin Grzybowski 2021 </p>
+                </div>
+            </div>
+
+        </footer>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
