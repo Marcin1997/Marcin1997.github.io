@@ -460,8 +460,9 @@ END
 .opening-welcome {
     height: 101vh;
     margin-top: -20px;
-    background: #3a3a3a;
-    
+    background: linear-gradient(-45deg, #1c1d25, #3d3d3d, #1c1d25, #3a3a3a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     
 }
 .main-page {
@@ -1395,8 +1396,7 @@ END
     .opening-welcome {
         height: 101vh;
         margin-top: -20px;
-        background: (#3a3a3a);
-        
+        background: #3a3a3a !important;
         
         
     }
