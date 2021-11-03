@@ -1393,7 +1393,14 @@ END
 
 
 @media (max-width: 670px) {
-
+    .opening-welcome {
+        height: 101vh;
+        margin-top: -20px;
+        background: (#3a3a3a);
+        
+        
+        
+    }
     .project-one .appear-div-desktop {
         
         display: none;
@@ -1492,9 +1499,8 @@ END
    position: fixed;
    top: 0;
     right: 0;
-       background: linear-gradient(-45deg, #1c1d25, #3d3d3d, #1c1d25, #3a3a3a);
-   background-size: 400% 400%;
-   animation: gradient 15s ease infinite;
+       background-color:#3a3a3a;
+   
    right: -40rem;
        transition: right .5s;
        z-index: 101;
