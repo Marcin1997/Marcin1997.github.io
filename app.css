@@ -89,9 +89,9 @@ html {
 
 .about-me-contents .summary {
     text-align: left;
-    width: 90%;
+    width: 95%;
     font-family: var(--ff-primary);
-    font-size: 14px;
+    font-size: 13px;
     text-shadow: none !important;
 }
 
@@ -973,7 +973,7 @@ END
 /* MEDIA QUERIES DOWN HERE, GOING FROM MIN-WIDTH TO MAX-WIDTH */
 @media (min-width: 830px) {
     .project-one .appear-div-desktop {
-        position: absolute;
+        position: relative;
         top: 220px;
         width: 60%;
         margin-left: 55px;
@@ -1035,7 +1035,6 @@ END
     .project-one-text a{
         top: 200px;
         left: 60px;
-        
         padding: 14px 30px;
         background: linear-gradient(to right, var(--clr-secondary), #5b9996);
         z-index: 2;
@@ -1050,9 +1049,9 @@ END
         left: 50px;
         z-index: 1000;
     }
-    .project-one-text .demo-github a{
-        
-        
+    .project-one-text .demo-github a {
+        position: absolute;
+        position: absolute;
         margin-right: 25px;
         margin-left: 25px;
         padding: 14px 30px;
@@ -1060,11 +1059,46 @@ END
         z-index: 2;
         color: var(--clr-primary);
         font-family: var(--ff-primary);
+        animation: aboutButtonRev 0.5s forwards !important;
+        top: 0px !important;
+    }
+    .project-one-text .demo-github a:nth-of-type(1){
+        left: 0px !important;
+        
+    }
+    .project-one-text .demo-github a:nth-of-type(2){
+        left: 180px;
+        
     }
     .project-one-text .demo-github a:hover {
-        background: linear-gradient(to right, #0abeb5, #028a83);
+        animation: aboutButton 0.5s forwards !important;
     }
-   
+    @keyframes aboutButton {
+        0% {
+           
+         
+        }
+        50% {
+            
+        }
+        100%{
+         
+            transform: perspective(120px) rotateX(12deg);
+        }
+    }
+    @keyframes aboutButtonRev {
+        0% {
+    
+         
+        }
+        50% {
+            transform: perspective(120px) rotateX(-12deg);
+        }
+        100%{
+        
+            transform: perspective(120px) rotateX(0deg);
+        }
+    }
     
     }
 
@@ -1253,6 +1287,16 @@ END
 
 
 @media (max-width: 830px) {
+
+
+
+
+
+
+
+
+
+
 
     .main-page .social-links {
        
@@ -1654,7 +1698,13 @@ END
    }
    
    
-
+   .project-one .demo-github {
+    position: absolute;
+   top: 150px !important;
+   margin: auto;
+    z-index: 1000;
+    
+}
 
    
    .project-one-text {
@@ -1677,23 +1727,15 @@ END
        font-weight: 600;
    }
    
-   .project-one-text .demo-github a{
-       
-       margin-top: 80px;
-       margin-right: 20px;
-       margin-left: 20px;
-       padding: 17px 13px;
-       background: linear-gradient(to right, var(--clr-secondary), #5b9996);
-       z-index: 2;
-       color: var(--clr-primary);
-       font-family: var(--ff-primary);
-   }
 
-   .project-one a {
-       top: 130px !important;
-       
-     }
-   
+
+
+
+
+
+
+
+
    .footer-nav, .footer-logo, .footer-extras {
        transform: scale(0.8);
    }
@@ -1703,6 +1745,67 @@ END
        
    }
 }
+
+@media (max-width: 830px) {
+    .project-one-text .demo-github a{
+        
+        margin-top: 80px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 17px 13px;
+        background: linear-gradient(to right, var(--clr-secondary), #5b9996);
+        z-index: 2;
+        color: var(--clr-primary);
+        font-family: var(--ff-primary);
+    }
+ 
+    .project-one a {
+        top: 130px !important;
+        
+      }
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      .project-one .demo-github {
+         position: absolute;
+        top: 230px;
+        margin: auto;
+         z-index: 1000;
+         
+     }
+     .project-one-text .demo-github a {
+         position: absolute;
+         margin-right: 25px;
+         margin-left: 25px;
+         padding: 14px 30px;
+         background: linear-gradient(to right, var(--clr-secondary), #5b9996);
+         z-index: 2;
+         color: var(--clr-primary);
+         font-family: var(--ff-primary);
+         animation: aboutButtonRev 0.5s forwards !important;
+         top: -200px !important;
+     }
+     .project-one-text .demo-github a:nth-of-type(1){
+         left: -20px;
+         
+     }
+     .project-one-text .demo-github a:nth-of-type(2){
+         left: -150px;
+ 
+         
+     }
+     .project-one-text .demo-github a:hover {
+         animation: aboutButton 0.5s forwards !important;
+     }
+     
+ 
+ }
 @media (min-width: 670px) and (max-width: 830px) {
     .project-one .appear-div-desktop {
         
@@ -1784,7 +1887,7 @@ END
    }
    
    .project-one-text .demo-github a{
-       
+    position: absolute;
        margin-top: 80px;
        margin-right: 25px;
        margin-left: 25px;
@@ -1793,8 +1896,10 @@ END
        z-index: 2;
        color: var(--clr-primary);
        font-family: var(--ff-primary);
-   }
+       animation: aboutButtonRev 0.5s forwards !important;
 
+   }
+   
    .project-one a {
        top: 130px !important;
        
